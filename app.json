@@ -3,6 +3,7 @@
     "name": "LocalMP3App",
     "slug": "LocalMP3App",
     "version": "1.0.0",
+    "owner": "akash_1705",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -19,19 +20,20 @@
       "adaptiveIcon": {
         "backgroundColor": "#020617",
         "foregroundImage": "./assets/icon.png"
-      },
-      "permissions": [
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
-      ]
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-audio"
+      [
+        "expo-audio",
+        {
+          "android": {
+            "foregroundService": true
+          }
+        }
+      ]
     ],
     "extra": {
       "eas": {
