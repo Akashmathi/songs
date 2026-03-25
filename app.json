@@ -7,45 +7,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#020617"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "package": "com.akash.localmp3app",
-      "adaptiveIcon": {
-        "backgroundColor": "#020617",
-        "foregroundImage": "./assets/icon.png"
-      }
+      "package": "com.akash.localmp3app"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-audio",
-        {
-          "android": {
-            "foregroundService": true
-          }
-        }
-      ],
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "minSdkVersion": 24,
-            "compileSdkVersion": 35,
-            "targetSdkVersion": 35,
-            "buildToolsVersion": "35.0.0"
-          }
-        }
-      ]
-    ],
     "extra": {
       "eas": {
         "projectId": "1964a7f4-802b-4d48-940b-35d86e101748"
