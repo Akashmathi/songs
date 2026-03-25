@@ -31,7 +31,7 @@ jobs:
           java-version: '17'
 
       - name: 🛠️ Prebuild
-        run: npx expo prebuild --platform android --no-interactive
+        run: npx expo prebuild --platform android --no-install
 
       - name: 🚀 Build APK
         run: |
