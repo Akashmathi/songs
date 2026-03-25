@@ -1,0 +1,10 @@
+*
+!app.json
+!app.config.js
+!package.json
+!package-lock.json
+!node_modules/**
+!assets/**
+!App.js
+!index.js
+!src/**
