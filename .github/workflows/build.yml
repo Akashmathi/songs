@@ -21,9 +21,6 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: 🛠️ Auto-Repair Versions
-        run: npx expo install --fix
-
       - name: 🏗 Setup EAS
         uses: expo/expo-github-action@v8
         with:
